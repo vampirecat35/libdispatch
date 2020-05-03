@@ -1226,7 +1226,7 @@ _dispatch_fd_entry_create_with_fd(dispatch_fd_t fd, uintptr_t hash)
 						break;
 				);
 			}
-			int32_t dev = major(st.st_dev);
+			int32_t dev = st.st_dev;
 			// We have to get the disk on the global dev queue. The
 			// barrier queue cannot continue until that is complete
 			dispatch_suspend(fd_entry->barrier_queue);
@@ -1311,7 +1311,7 @@ _dispatch_fd_entry_create_with_path(dispatch_io_path_data_t path_data,
 	dispatch_fd_entry_t fd_entry = _dispatch_fd_entry_create(
 			path_data->channel->queue);
 	if (S_ISREG(mode)) {
-		_dispatch_disk_init(fd_entry, major(dev));
+		_dispatch_disk_init(fd_entry, dev);
 	} else {
 		_dispatch_stream_init(fd_entry, _dispatch_get_root_queue(
 				DISPATCH_QUEUE_PRIORITY_DEFAULT, false));

@@ -1,0 +1,608 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_915ac/fast && /usr/bin/make -f CMakeFiles/cmTC_915ac.dir/build.make CMakeFiles/cmTC_915ac.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_915ac.dir/src.c.o
+/usr/bin/clang   -std=gnu99 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_915ac.dir/src.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_915ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_915ac.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_915ac.dir/src.c.o  -o cmTC_915ac 
+/usr/bin/ld: CMakeFiles/cmTC_915ac.dir/src.c.o: in function `main':
+src.c:(.text+0x35): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x41): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x53): undefined reference to `pthread_join'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_915ac.dir/build.make:87: cmTC_915ac] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_915ac/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1bd9a/fast && /usr/bin/make -f CMakeFiles/cmTC_1bd9a.dir/build.make CMakeFiles/cmTC_1bd9a.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1bd9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bd9a.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o  -o cmTC_1bd9a  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_1bd9a.dir/build.make:87: cmTC_1bd9a] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1bd9a/fast] Error 2
+
+
+
+Determining if the function KQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c7b1f/fast && /usr/bin/make -f CMakeFiles/cmTC_c7b1f.dir/build.make CMakeFiles/cmTC_c7b1f.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c7b1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7b1f.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC    -rdynamic CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o  -o cmTC_c7b1f 
+/usr/bin/ld: CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `KQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_c7b1f.dir/build.make:87: cmTC_c7b1f] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c7b1f/fast] Error 2
+
+
+
+Determining if the function PTHREAD_WORKQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d231c/fast && /usr/bin/make -f CMakeFiles/cmTC_d231c.dir/build.make CMakeFiles/cmTC_d231c.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d231c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d231c.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC    -rdynamic CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o  -o cmTC_d231c 
+/usr/bin/ld: CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `PTHREAD_WORKQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_d231c.dir/build.make:87: cmTC_d231c] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d231c/fast] Error 2
+
+
+
+Determining if the function BLOCKS_RUNTIME_RUNTIME_IN_LIBC exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d27bc/fast && /usr/bin/make -f CMakeFiles/cmTC_d27bc.dir/build.make CMakeFiles/cmTC_d27bc.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d27bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d27bc.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC    -rdynamic CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o  -o cmTC_d27bc 
+/usr/bin/ld: CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_d27bc.dir/build.make:87: cmTC_d27bc] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d27bc/fast] Error 2
+
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ca991/fast && /usr/bin/make -f CMakeFiles/cmTC_ca991.dir/build.make CMakeFiles/cmTC_ca991.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ca991
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca991.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np    -rdynamic CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o  -o cmTC_ca991 
+/usr/bin/ld: CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ca991.dir/build.make:87: cmTC_ca991] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ca991/fast] Error 2
+
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists in the /usr/lib/x86_64-linux-gnu/libpthread_workqueue.so failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a8e1f/fast && /usr/bin/make -f CMakeFiles/cmTC_a8e1f.dir/build.make CMakeFiles/cmTC_a8e1f.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a8e1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e1f.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np    -rdynamic CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o  -o cmTC_a8e1f  /usr/lib/x86_64-linux-gnu/libpthread_workqueue.so 
+/usr/bin/ld: CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a8e1f.dir/build.make:88: cmTC_a8e1f] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a8e1f/fast] Error 2
+
+
+
+Determining if the CLOCK_UPTIME exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cd84c/fast && /usr/bin/make -f CMakeFiles/cmTC_cd84c.dir/build.make CMakeFiles/cmTC_cd84c.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
+  return ((int*)(&CLOCK_UPTIME))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cd84c.dir/build.make:66: CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cd84c/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_UPTIME
+  return ((int*)(&CLOCK_UPTIME))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the NOTE_NONE exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_80445/fast && /usr/bin/make -f CMakeFiles/cmTC_80445.dir/build.make CMakeFiles/cmTC_80445.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_80445.dir/build.make:66: CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_80445/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_NONE
+  return ((int*)(&NOTE_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the NOTE_REAP exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cb798/fast && /usr/bin/make -f CMakeFiles/cmTC_cb798.dir/build.make CMakeFiles/cmTC_cb798.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cb798.dir/build.make:66: CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cb798/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REAP
+  return ((int*)(&NOTE_REAP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the NOTE_SIGNAL exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_63641/fast && /usr/bin/make -f CMakeFiles/cmTC_63641.dir/build.make CMakeFiles/cmTC_63641.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_63641.dir/build.make:66: CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_63641/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_SIGNAL
+  return ((int*)(&NOTE_SIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the NOTE_REVOKE exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_96573/fast && /usr/bin/make -f CMakeFiles/cmTC_96573.dir/build.make CMakeFiles/cmTC_96573.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_96573.dir/build.make:66: CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_96573/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REVOKE
+  return ((int*)(&NOTE_REVOKE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59879/fast && /usr/bin/make -f CMakeFiles/cmTC_59879.dir/build.make CMakeFiles/cmTC_59879.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_59879.dir/build.make:66: CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_59879/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH_SAFE
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the FD_COPY exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7e006/fast && /usr/bin/make -f CMakeFiles/cmTC_7e006.dir/build.make CMakeFiles/cmTC_7e006.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
+  return ((int*)(&FD_COPY))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_7e006.dir/build.make:66: CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7e006/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/select.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FD_COPY
+  return ((int*)(&FD_COPY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the SIGEMT exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5272/fast && /usr/bin/make -f CMakeFiles/cmTC_d5272.dir/build.make CMakeFiles/cmTC_d5272.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
+  return ((int*)(&SIGEMT))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d5272.dir/build.make:66: CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d5272/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGEMT
+  return ((int*)(&SIGEMT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the VQ_UPDATE exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9a0fc/fast && /usr/bin/make -f CMakeFiles/cmTC_9a0fc.dir/build.make CMakeFiles/cmTC_9a0fc.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
+  return ((int*)(&VQ_UPDATE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9a0fc.dir/build.make:66: CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9a0fc/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_UPDATE
+  return ((int*)(&VQ_UPDATE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the VQ_VERYLOWDISK exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8bdd3/fast && /usr/bin/make -f CMakeFiles/cmTC_8bdd3.dir/build.make CMakeFiles/cmTC_8bdd3.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8bdd3.dir/build.make:66: CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8bdd3/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_VERYLOWDISK
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cbc46/fast && /usr/bin/make -f CMakeFiles/cmTC_cbc46.dir/build.make CMakeFiles/cmTC_cbc46.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_cbc46.dir/build.make:66: CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cbc46/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_SETEXEC
+  return ((int*)(&POSIX_SPAWN_SETEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03478/fast && /usr/bin/make -f CMakeFiles/cmTC_03478.dir/build.make CMakeFiles/cmTC_03478.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o
+/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_03478.dir/build.make:66: CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_03478/fast] Error 2
+
+
+File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_START_SUSPENDED
+  return ((int*)(&POSIX_SPAWN_START_SUSPENDED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function pthread_key_init_np exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_da404/fast && /usr/bin/make -f CMakeFiles/cmTC_da404.dir/build.make CMakeFiles/cmTC_da404.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_da404
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da404.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np    -rdynamic CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o  -o cmTC_da404 
+/usr/bin/ld: CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_key_init_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_da404.dir/build.make:87: cmTC_da404] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_da404/fast] Error 2
+
+
+
+Determining if the function pthread_main_np exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1bb1/fast && /usr/bin/make -f CMakeFiles/cmTC_c1bb1.dir/build.make CMakeFiles/cmTC_c1bb1.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c1bb1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1bb1.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np    -rdynamic CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o  -o cmTC_c1bb1 
+/usr/bin/ld: CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_main_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_c1bb1.dir/build.make:87: cmTC_c1bb1] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c1bb1/fast] Error 2
+
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3907/fast && /usr/bin/make -f CMakeFiles/cmTC_e3907.dir/build.make CMakeFiles/cmTC_e3907.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e3907
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3907.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o  -o cmTC_e3907 
+/usr/bin/ld: CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `sysctlbyname'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_e3907.dir/build.make:87: cmTC_e3907] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3907/fast] Error 2
+
+
+
+Determining if the function getprogname exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a3c98/fast && /usr/bin/make -f CMakeFiles/cmTC_a3c98.dir/build.make CMakeFiles/cmTC_a3c98.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=getprogname   -o CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a3c98
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3c98.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=getprogname    -rdynamic CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o  -o cmTC_a3c98 
+/usr/bin/ld: CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `getprogname'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a3c98.dir/build.make:87: cmTC_a3c98] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a3c98/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7d63b/fast && /usr/bin/make -f CMakeFiles/cmTC_7d63b.dir/build.make CMakeFiles/cmTC_7d63b.dir/build
+make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o
+/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7d63b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d63b.dir/link.txt --verbose=1
+/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o  -o cmTC_7d63b 
+/usr/bin/ld: CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcpy'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7d63b.dir/build.make:87: cmTC_7d63b] Error 1
+make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7d63b/fast] Error 2
+
+
+
