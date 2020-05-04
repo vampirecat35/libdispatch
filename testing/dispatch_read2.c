@@ -83,7 +83,7 @@ dispatch_read2(dispatch_fd_t fd,
 	__block int err = 0;
 	dispatch_source_set_event_handler(reader, ^{
 		const ssize_t bufsiz = 1024*512; // 512KB buffer
-		char *buffer = valloc(bufsiz);
+		char *buffer = malloc(bufsiz);
 		ssize_t actual = read(fd, buffer, bufsiz);
 		if (actual == -1) {
 			err = errno;

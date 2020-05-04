@@ -1999,7 +1999,7 @@ _dispatch_operation_perform(dispatch_operation_t op)
 			}
 			size_t buf_siz_floor =
 					op->buf_siz > PAGE_SIZE ? op->buf_siz : PAGE_SIZE;
-			while (!(op->buf = valloc(op->buf_siz))) {
+			while (!(op->buf = malloc(op->buf_siz))) {
 				sleep(1);  // Temporary resource shortage
 				if (op->buf_siz >= buf_siz_floor / 2 * 3) {
 					op->buf_siz = buf_siz_floor / 3 * 2;

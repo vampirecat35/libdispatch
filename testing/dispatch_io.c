@@ -395,7 +395,7 @@ test_async_read(char *path, size_t size, int option, dispatch_queue_t queue,
 		case DISPATCH_ASYNC_READ_ON_CONCURRENT_QUEUE:
 		case DISPATCH_ASYNC_READ_ON_SERIAL_QUEUE:
 			dispatch_async(queue, ^{
-				char* buffer = valloc(size);
+				char* buffer = malloc(size);
 				ssize_t r = read(fd, buffer, size);
 				if (r == -1) {
 					test_errno("async read error", errno, 0);

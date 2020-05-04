@@ -1,173 +1,411 @@
-Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
 
-Run Build Command(s):/usr/bin/make cmTC_915ac/fast && /usr/bin/make -f CMakeFiles/cmTC_915ac.dir/build.make CMakeFiles/cmTC_915ac.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_915ac.dir/src.c.o
-/usr/bin/clang   -std=gnu99 -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_915ac.dir/src.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_915ac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_915ac.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_915ac.dir/src.c.o  -o cmTC_915ac 
-/usr/bin/ld: CMakeFiles/cmTC_915ac.dir/src.c.o: in function `main':
-src.c:(.text+0x35): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x41): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x53): undefined reference to `pthread_join'
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_915ac.dir/build.make:87: cmTC_915ac] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_915ac/fast] Error 2
+The output was:
+No such file or directory
 
 
-Source file was:
-#include <pthread.h>
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
 
-void* test_func(void* data)
-{
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
-  return 0;
-}
-
-Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_1bd9a/fast && /usr/bin/make -f CMakeFiles/cmTC_1bd9a.dir/build.make CMakeFiles/cmTC_1bd9a.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1bd9a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bd9a.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1bd9a.dir/CheckFunctionExists.c.o  -o cmTC_1bd9a  -lpthreads 
-/usr/bin/ld: cannot find -lpthreads
-clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_1bd9a.dir/build.make:87: cmTC_1bd9a] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_1bd9a/fast] Error 2
+The output was:
+No such file or directory
 
 
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -Aa 
 
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang++ -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 Determining if the function KQUEUE_IN_LIBC exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c7b1f/fast && /usr/bin/make -f CMakeFiles/cmTC_c7b1f.dir/build.make CMakeFiles/cmTC_c7b1f.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c7b1f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7b1f.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC    -rdynamic CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o  -o cmTC_c7b1f 
-/usr/bin/ld: CMakeFiles/cmTC_c7b1f.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `KQUEUE_IN_LIBC'
+Run Build Command(s):/usr/local/bin/make cmTC_f0961/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_f0961.dir/build.make CMakeFiles/cmTC_f0961.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_f0961.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_f0961.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f0961
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0961.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f0961.dir/CheckFunctionExists.c.o  -o cmTC_f0961 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_f0961.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'KQUEUE_IN_LIBC'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_c7b1f.dir/build.make:87: cmTC_c7b1f] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c7b1f/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_f0961.dir/build.make:87: cmTC_f0961] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_f0961/fast] Fout 2
 
 
 Determining if the function PTHREAD_WORKQUEUE_IN_LIBC exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d231c/fast && /usr/bin/make -f CMakeFiles/cmTC_d231c.dir/build.make CMakeFiles/cmTC_d231c.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d231c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d231c.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC    -rdynamic CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o  -o cmTC_d231c 
-/usr/bin/ld: CMakeFiles/cmTC_d231c.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `PTHREAD_WORKQUEUE_IN_LIBC'
+Run Build Command(s):/usr/local/bin/make cmTC_1d776/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_1d776.dir/build.make CMakeFiles/cmTC_1d776.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_1d776.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_1d776.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1d776
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d776.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1d776.dir/CheckFunctionExists.c.o  -o cmTC_1d776 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_1d776.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'PTHREAD_WORKQUEUE_IN_LIBC'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_d231c.dir/build.make:87: cmTC_d231c] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d231c/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_1d776.dir/build.make:87: cmTC_1d776] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_1d776/fast] Fout 2
 
 
 Determining if the function BLOCKS_RUNTIME_RUNTIME_IN_LIBC exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d27bc/fast && /usr/bin/make -f CMakeFiles/cmTC_d27bc.dir/build.make CMakeFiles/cmTC_d27bc.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d27bc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d27bc.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC    -rdynamic CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o  -o cmTC_d27bc 
-/usr/bin/ld: CMakeFiles/cmTC_d27bc.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
+Run Build Command(s):/usr/local/bin/make cmTC_a1498/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a1498.dir/build.make CMakeFiles/cmTC_a1498.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a1498.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_a1498.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1498
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1498.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a1498.dir/CheckFunctionExists.c.o  -o cmTC_a1498 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_a1498.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_d27bc.dir/build.make:87: cmTC_d27bc] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d27bc/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_a1498.dir/build.make:87: cmTC_a1498] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a1498/fast] Fout 2
 
 
 Determining if the function pthread_workqueue_setdispatch_np exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_ca991/fast && /usr/bin/make -f CMakeFiles/cmTC_ca991.dir/build.make CMakeFiles/cmTC_ca991.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ca991
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca991.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np    -rdynamic CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o  -o cmTC_ca991 
-/usr/bin/ld: CMakeFiles/cmTC_ca991.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_workqueue_setdispatch_np'
+Run Build Command(s):/usr/local/bin/make cmTC_eac9b/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_eac9b.dir/build.make CMakeFiles/cmTC_eac9b.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_eac9b.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_eac9b.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eac9b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eac9b.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_eac9b.dir/CheckFunctionExists.c.o  -o cmTC_eac9b 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_eac9b.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_workqueue_setdispatch_np'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_ca991.dir/build.make:87: cmTC_ca991] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_ca991/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_eac9b.dir/build.make:87: cmTC_eac9b] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_eac9b/fast] Fout 2
 
 
+Determining if the function pthread_workqueue_setdispatch_np exists in the /Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/lib/libpthread_workqueue.a failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Determining if the function pthread_workqueue_setdispatch_np exists in the /usr/lib/x86_64-linux-gnu/libpthread_workqueue.so failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a8e1f/fast && /usr/bin/make -f CMakeFiles/cmTC_a8e1f.dir/build.make CMakeFiles/cmTC_a8e1f.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a8e1f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8e1f.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np    -rdynamic CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o  -o cmTC_a8e1f  /usr/lib/x86_64-linux-gnu/libpthread_workqueue.so 
-/usr/bin/ld: CMakeFiles/cmTC_a8e1f.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_workqueue_setdispatch_np'
+Run Build Command(s):/usr/local/bin/make cmTC_8283e/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_8283e.dir/build.make CMakeFiles/cmTC_8283e.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_8283e.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_8283e.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8283e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8283e.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8283e.dir/CheckFunctionExists.c.o  -o cmTC_8283e /Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/lib/libpthread_workqueue.a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_8283e.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_workqueue_setdispatch_np'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_a8e1f.dir/build.make:88: cmTC_a8e1f] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a8e1f/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_8283e.dir/build.make:88: cmTC_8283e] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_8283e/fast] Fout 2
 
 
 Determining if the CLOCK_UPTIME exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cd84c/fast && /usr/bin/make -f CMakeFiles/cmTC_cd84c.dir/build.make CMakeFiles/cmTC_cd84c.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
+Run Build Command(s):/usr/local/bin/make cmTC_785f9/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_785f9.dir/build.make CMakeFiles/cmTC_785f9.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_785f9.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_785f9.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
   return ((int*)(&CLOCK_UPTIME))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_cd84c.dir/build.make:66: CMakeFiles/cmTC_cd84c.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cd84c/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_785f9.dir/build.make:66: CMakeFiles/cmTC_785f9.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_785f9/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <time.h>
 
@@ -181,23 +419,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the NOTE_NONE exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_80445/fast && /usr/bin/make -f CMakeFiles/cmTC_80445.dir/build.make CMakeFiles/cmTC_80445.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+Determining if the NOTE_NONE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_89ac7/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_89ac7.dir/build.make CMakeFiles/cmTC_89ac7.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_89ac7.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_89ac7.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
 #include <sys/event.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_80445.dir/build.make:66: CMakeFiles/cmTC_80445.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_80445/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_89ac7.dir/build.make:66: CMakeFiles/cmTC_89ac7.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_89ac7/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/event.h>
 
@@ -211,23 +450,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the NOTE_REAP exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cb798/fast && /usr/bin/make -f CMakeFiles/cmTC_cb798.dir/build.make CMakeFiles/cmTC_cb798.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+Determining if the NOTE_REAP exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_03614/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_03614.dir/build.make CMakeFiles/cmTC_03614.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_03614.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_03614.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
 #include <sys/event.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_cb798.dir/build.make:66: CMakeFiles/cmTC_cb798.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cb798/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_03614.dir/build.make:66: CMakeFiles/cmTC_03614.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_03614/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/event.h>
 
@@ -241,23 +481,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the NOTE_SIGNAL exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_63641/fast && /usr/bin/make -f CMakeFiles/cmTC_63641.dir/build.make CMakeFiles/cmTC_63641.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+Determining if the NOTE_SIGNAL exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_d6b6d/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_d6b6d.dir/build.make CMakeFiles/cmTC_d6b6d.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_d6b6d.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_d6b6d.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
 #include <sys/event.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_63641.dir/build.make:66: CMakeFiles/cmTC_63641.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_63641/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_d6b6d.dir/build.make:66: CMakeFiles/cmTC_d6b6d.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_d6b6d/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/event.h>
 
@@ -271,23 +512,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the NOTE_REVOKE exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_96573/fast && /usr/bin/make -f CMakeFiles/cmTC_96573.dir/build.make CMakeFiles/cmTC_96573.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+Determining if the NOTE_REVOKE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_ec7d7/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_ec7d7.dir/build.make CMakeFiles/cmTC_ec7d7.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_ec7d7.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_ec7d7.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
 #include <sys/event.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_96573.dir/build.make:66: CMakeFiles/cmTC_96573.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_96573/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ec7d7.dir/build.make:66: CMakeFiles/cmTC_ec7d7.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_ec7d7/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/event.h>
 
@@ -301,23 +543,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_59879/fast && /usr/bin/make -f CMakeFiles/cmTC_59879.dir/build.make CMakeFiles/cmTC_59879.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
+Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_ed730/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_ed730.dir/build.make CMakeFiles/cmTC_ed730.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_ed730.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_ed730.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
   return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_59879.dir/build.make:66: CMakeFiles/cmTC_59879.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_59879/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ed730.dir/build.make:66: CMakeFiles/cmTC_ed730.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_ed730/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/queue.h>
 
@@ -331,23 +574,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the FD_COPY exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_7e006/fast && /usr/bin/make -f CMakeFiles/cmTC_7e006.dir/build.make CMakeFiles/cmTC_7e006.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
+Determining if the FD_COPY exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_4e523/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_4e523.dir/build.make CMakeFiles/cmTC_4e523.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_4e523.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_4e523.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
   return ((int*)(&FD_COPY))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_7e006.dir/build.make:66: CMakeFiles/cmTC_7e006.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_7e006/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_4e523.dir/build.make:66: CMakeFiles/cmTC_4e523.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_4e523/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/select.h>
 
@@ -361,23 +605,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the SIGEMT exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d5272/fast && /usr/bin/make -f CMakeFiles/cmTC_d5272.dir/build.make CMakeFiles/cmTC_d5272.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
+Determining if the SIGEMT exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_3f8c3/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_3f8c3.dir/build.make CMakeFiles/cmTC_3f8c3.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_3f8c3.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_3f8c3.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
   return ((int*)(&SIGEMT))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_d5272.dir/build.make:66: CMakeFiles/cmTC_d5272.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d5272/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_3f8c3.dir/build.make:66: CMakeFiles/cmTC_3f8c3.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_3f8c3/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <signal.h>
 
@@ -391,23 +636,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the VQ_UPDATE exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_9a0fc/fast && /usr/bin/make -f CMakeFiles/cmTC_9a0fc.dir/build.make CMakeFiles/cmTC_9a0fc.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
+Determining if the VQ_UPDATE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_fdd50/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_fdd50.dir/build.make CMakeFiles/cmTC_fdd50.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_fdd50.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_fdd50.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
   return ((int*)(&VQ_UPDATE))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_9a0fc.dir/build.make:66: CMakeFiles/cmTC_9a0fc.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_9a0fc/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_fdd50.dir/build.make:66: CMakeFiles/cmTC_fdd50.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_fdd50/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/mount.h>
 
@@ -421,23 +667,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the VQ_VERYLOWDISK exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_8bdd3/fast && /usr/bin/make -f CMakeFiles/cmTC_8bdd3.dir/build.make CMakeFiles/cmTC_8bdd3.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
+Determining if the VQ_VERYLOWDISK exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_13f56/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_13f56.dir/build.make CMakeFiles/cmTC_13f56.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_13f56.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_13f56.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
   return ((int*)(&VQ_VERYLOWDISK))[argc];
                   ^
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_8bdd3.dir/build.make:66: CMakeFiles/cmTC_8bdd3.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_8bdd3/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_13f56.dir/build.make:66: CMakeFiles/cmTC_13f56.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_13f56/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/mount.h>
 
@@ -451,23 +698,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cbc46/fast && /usr/bin/make -f CMakeFiles/cmTC_cbc46.dir/build.make CMakeFiles/cmTC_cbc46.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_51a49/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_51a49.dir/build.make CMakeFiles/cmTC_51a49.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_51a49.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_51a49.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
 #include <sys/spawn.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_cbc46.dir/build.make:66: CMakeFiles/cmTC_cbc46.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cbc46/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_51a49.dir/build.make:66: CMakeFiles/cmTC_51a49.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_51a49/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/spawn.h>
 
@@ -481,23 +729,24 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
-Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_03478/fast && /usr/bin/make -f CMakeFiles/cmTC_03478.dir/build.make CMakeFiles/cmTC_03478.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o
-/usr/bin/clang   -std=gnu99    -o CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o   -c /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_8bfc8/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_8bfc8.dir/build.make CMakeFiles/cmTC_8bfc8.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_8bfc8.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99    -o CMakeFiles/cmTC_8bfc8.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
 #include <sys/spawn.h>
          ^~~~~~~~~~~~~
 1 error generated.
-make[1]: *** [CMakeFiles/cmTC_03478.dir/build.make:66: CMakeFiles/cmTC_03478.dir/CheckSymbolExists.c.o] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_03478/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_8bfc8.dir/build.make:66: CMakeFiles/cmTC_8bfc8.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_8bfc8/fast] Fout 2
 
-
-File /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <sys/spawn.h>
 
@@ -511,98 +760,1773 @@ int main(int argc, char** argv)
   return 0;
 #endif
 }
+
+Determining if the program_invocation_short_name exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_3cf9d/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_3cf9d.dir/build.make CMakeFiles/cmTC_3cf9d.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_3cf9d.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -D_GNU_SOURCE  -std=gnu99    -o CMakeFiles/cmTC_3cf9d.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'program_invocation_short_name'
+  return ((int*)(&program_invocation_short_name))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3cf9d.dir/build.make:66: CMakeFiles/cmTC_3cf9d.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_3cf9d/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef program_invocation_short_name
+  return ((int*)(&program_invocation_short_name))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
 Determining if the function pthread_key_init_np exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_da404/fast && /usr/bin/make -f CMakeFiles/cmTC_da404.dir/build.make CMakeFiles/cmTC_da404.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_da404
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da404.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np    -rdynamic CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o  -o cmTC_da404 
-/usr/bin/ld: CMakeFiles/cmTC_da404.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_key_init_np'
+Run Build Command(s):/usr/local/bin/make cmTC_62262/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_62262.dir/build.make CMakeFiles/cmTC_62262.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_62262.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_62262.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62262
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62262.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_62262.dir/CheckFunctionExists.c.o  -o cmTC_62262 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_62262.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_key_init_np'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_da404.dir/build.make:87: cmTC_da404] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_da404/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_62262.dir/build.make:87: cmTC_62262] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_62262/fast] Fout 2
 
 
 Determining if the function pthread_main_np exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c1bb1/fast && /usr/bin/make -f CMakeFiles/cmTC_c1bb1.dir/build.make CMakeFiles/cmTC_c1bb1.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c1bb1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1bb1.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np    -rdynamic CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o  -o cmTC_c1bb1 
-/usr/bin/ld: CMakeFiles/cmTC_c1bb1.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `pthread_main_np'
+Run Build Command(s):/usr/local/bin/make cmTC_9c9dd/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_9c9dd.dir/build.make CMakeFiles/cmTC_9c9dd.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_9c9dd.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_9c9dd.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9c9dd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c9dd.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_9c9dd.dir/CheckFunctionExists.c.o  -o cmTC_9c9dd 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_9c9dd.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_main_np'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_c1bb1.dir/build.make:87: cmTC_c1bb1] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_c1bb1/fast] Error 2
-
+make[1]: *** [CMakeFiles/cmTC_9c9dd.dir/build.make:87: cmTC_9c9dd] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_9c9dd/fast] Fout 2
 
 
 Determining if the function sysctlbyname exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_e3907/fast && /usr/bin/make -f CMakeFiles/cmTC_e3907.dir/build.make CMakeFiles/cmTC_e3907.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e3907
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3907.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o  -o cmTC_e3907 
-/usr/bin/ld: CMakeFiles/cmTC_e3907.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `sysctlbyname'
+Run Build Command(s):/usr/local/bin/make cmTC_fbf7f/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_fbf7f.dir/build.make CMakeFiles/cmTC_fbf7f.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_fbf7f.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_fbf7f.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fbf7f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbf7f.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_fbf7f.dir/CheckFunctionExists.c.o  -o cmTC_fbf7f 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_fbf7f.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'sysctlbyname'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_e3907.dir/build.make:87: cmTC_e3907] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_e3907/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_fbf7f.dir/build.make:87: cmTC_fbf7f] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_fbf7f/fast] Fout 2
 
 
+Determining if the function KQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Determining if the function getprogname exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_a3c98/fast && /usr/bin/make -f CMakeFiles/cmTC_a3c98.dir/build.make CMakeFiles/cmTC_a3c98.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=getprogname   -o CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a3c98
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3c98.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=getprogname    -rdynamic CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o  -o cmTC_a3c98 
-/usr/bin/ld: CMakeFiles/cmTC_a3c98.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `getprogname'
+Run Build Command(s):/usr/local/bin/make cmTC_afbec/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_afbec.dir/build.make CMakeFiles/cmTC_afbec.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_afbec.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_afbec.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_afbec
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afbec.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_afbec.dir/CheckFunctionExists.c.o  -o cmTC_afbec 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_afbec.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'KQUEUE_IN_LIBC'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_a3c98.dir/build.make:87: cmTC_a3c98] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a3c98/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_afbec.dir/build.make:87: cmTC_afbec] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_afbec/fast] Fout 2
 
 
+Determining if the function PTHREAD_WORKQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
 
-Determining if the function strlcpy exists failed with the following output:
-Change Dir: /home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_7d63b/fast && /usr/bin/make -f CMakeFiles/cmTC_7d63b.dir/build.make CMakeFiles/cmTC_7d63b.dir/build
-make[1]: Entering directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o
-/usr/bin/clang   -std=gnu99 -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7d63b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d63b.dir/link.txt --verbose=1
-/usr/bin/clang  -std=gnu99 -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o  -o cmTC_7d63b 
-/usr/bin/ld: CMakeFiles/cmTC_7d63b.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x17): undefined reference to `strlcpy'
+Run Build Command(s):/usr/local/bin/make cmTC_4a58a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_4a58a.dir/build.make CMakeFiles/cmTC_4a58a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_4a58a.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_4a58a.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4a58a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a58a.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4a58a.dir/CheckFunctionExists.c.o  -o cmTC_4a58a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_4a58a.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'PTHREAD_WORKQUEUE_IN_LIBC'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-make[1]: *** [CMakeFiles/cmTC_7d63b.dir/build.make:87: cmTC_7d63b] Error 1
-make[1]: Leaving directory '/home/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_7d63b/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_4a58a.dir/build.make:87: cmTC_4a58a] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_4a58a/fast] Fout 2
 
+
+Determining if the function BLOCKS_RUNTIME_RUNTIME_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_24c98/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_24c98.dir/build.make CMakeFiles/cmTC_24c98.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_24c98.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_24c98.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_24c98
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24c98.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_24c98.dir/CheckFunctionExists.c.o  -o cmTC_24c98 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_24c98.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_24c98.dir/build.make:87: cmTC_24c98] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_24c98/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_bc26b/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_bc26b.dir/build.make CMakeFiles/cmTC_bc26b.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_bc26b.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_bc26b.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bc26b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc26b.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_bc26b.dir/CheckFunctionExists.c.o  -o cmTC_bc26b 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_bc26b.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_bc26b.dir/build.make:87: cmTC_bc26b] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_bc26b/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists in the /Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/lib/libpthread_workqueue.a failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a1bb0/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a1bb0.dir/build.make CMakeFiles/cmTC_a1bb0.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a1bb0.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_a1bb0.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1bb0
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1bb0.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a1bb0.dir/CheckFunctionExists.c.o  -o cmTC_a1bb0 /Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/lib/libpthread_workqueue.a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_a1bb0.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a1bb0.dir/build.make:88: cmTC_a1bb0] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a1bb0/fast] Fout 2
+
+
+Determining if the CLOCK_UPTIME exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_8d2f1/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_8d2f1.dir/build.make CMakeFiles/cmTC_8d2f1.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_8d2f1.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_8d2f1.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
+  return ((int*)(&CLOCK_UPTIME))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8d2f1.dir/build.make:66: CMakeFiles/cmTC_8d2f1.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_8d2f1/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_UPTIME
+  return ((int*)(&CLOCK_UPTIME))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_NONE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_74f19/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_74f19.dir/build.make CMakeFiles/cmTC_74f19.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_74f19.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_74f19.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'NOTE_NONE'
+  return ((int*)(&NOTE_NONE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_74f19.dir/build.make:66: CMakeFiles/cmTC_74f19.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_74f19/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_NONE
+  return ((int*)(&NOTE_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REAP exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_24b35/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_24b35.dir/build.make CMakeFiles/cmTC_24b35.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_24b35.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_24b35.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'NOTE_REAP'
+  return ((int*)(&NOTE_REAP))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_24b35.dir/build.make:66: CMakeFiles/cmTC_24b35.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_24b35/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REAP
+  return ((int*)(&NOTE_REAP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_SIGNAL exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_1257a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_1257a.dir/build.make CMakeFiles/cmTC_1257a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_1257a.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_1257a.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'NOTE_SIGNAL'
+  return ((int*)(&NOTE_SIGNAL))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1257a.dir/build.make:66: CMakeFiles/cmTC_1257a.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_1257a/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_SIGNAL
+  return ((int*)(&NOTE_SIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REVOKE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_2c73a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_2c73a.dir/build.make CMakeFiles/cmTC_2c73a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_2c73a.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_2c73a.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'NOTE_REVOKE'
+  return ((int*)(&NOTE_REVOKE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2c73a.dir/build.make:66: CMakeFiles/cmTC_2c73a.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_2c73a/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REVOKE
+  return ((int*)(&NOTE_REVOKE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_6ecd3/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_6ecd3.dir/build.make CMakeFiles/cmTC_6ecd3.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_6ecd3.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_6ecd3.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6ecd3.dir/build.make:66: CMakeFiles/cmTC_6ecd3.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_6ecd3/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH_SAFE
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FD_COPY exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_49be2/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_49be2.dir/build.make CMakeFiles/cmTC_49be2.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_49be2.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_49be2.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
+  return ((int*)(&FD_COPY))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_49be2.dir/build.make:66: CMakeFiles/cmTC_49be2.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_49be2/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/select.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FD_COPY
+  return ((int*)(&FD_COPY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SIGEMT exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_c1694/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_c1694.dir/build.make CMakeFiles/cmTC_c1694.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_c1694.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_c1694.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
+  return ((int*)(&SIGEMT))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c1694.dir/build.make:66: CMakeFiles/cmTC_c1694.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_c1694/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGEMT
+  return ((int*)(&SIGEMT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_UPDATE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_9d16e/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_9d16e.dir/build.make CMakeFiles/cmTC_9d16e.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_9d16e.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_9d16e.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
+  return ((int*)(&VQ_UPDATE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_9d16e.dir/build.make:66: CMakeFiles/cmTC_9d16e.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_9d16e/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_UPDATE
+  return ((int*)(&VQ_UPDATE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_VERYLOWDISK exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_87e0b/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_87e0b.dir/build.make CMakeFiles/cmTC_87e0b.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_87e0b.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_87e0b.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_87e0b.dir/build.make:66: CMakeFiles/cmTC_87e0b.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_87e0b/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_VERYLOWDISK
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_417ed/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_417ed.dir/build.make CMakeFiles/cmTC_417ed.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_417ed.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_417ed.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_417ed.dir/build.make:66: CMakeFiles/cmTC_417ed.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_417ed/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_SETEXEC
+  return ((int*)(&POSIX_SPAWN_SETEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_d852f/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_d852f.dir/build.make CMakeFiles/cmTC_d852f.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_d852f.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_d852f.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d852f.dir/build.make:66: CMakeFiles/cmTC_d852f.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_d852f/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_START_SUSPENDED
+  return ((int*)(&POSIX_SPAWN_START_SUSPENDED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the program_invocation_short_name exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a5d4c/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a5d4c.dir/build.make CMakeFiles/cmTC_a5d4c.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a5d4c.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -D_GNU_SOURCE  -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99    -o CMakeFiles/cmTC_a5d4c.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'program_invocation_short_name'
+  return ((int*)(&program_invocation_short_name))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a5d4c.dir/build.make:66: CMakeFiles/cmTC_a5d4c.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a5d4c/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef program_invocation_short_name
+  return ((int*)(&program_invocation_short_name))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_key_init_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a62d3/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a62d3.dir/build.make CMakeFiles/cmTC_a62d3.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a62d3.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_a62d3.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a62d3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a62d3.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a62d3.dir/CheckFunctionExists.c.o  -o cmTC_a62d3 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_a62d3.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_key_init_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a62d3.dir/build.make:87: cmTC_a62d3] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a62d3/fast] Fout 2
+
+
+Determining if the function pthread_main_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_86ed1/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_86ed1.dir/build.make CMakeFiles/cmTC_86ed1.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_86ed1.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_86ed1.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_86ed1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86ed1.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_86ed1.dir/CheckFunctionExists.c.o  -o cmTC_86ed1 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_86ed1.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'pthread_main_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_86ed1.dir/build.make:87: cmTC_86ed1] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_86ed1/fast] Fout 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_29ac8/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_29ac8.dir/build.make CMakeFiles/cmTC_29ac8.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_29ac8.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang   -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_29ac8.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_29ac8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29ac8.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi23-clang -O2 -I/Users/andyvand/Downloads/android-ndk-r21b/arm_prefix/include -I/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_29ac8.dir/CheckFunctionExists.c.o  -o cmTC_29ac8 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin/ld: warning: cannot find entry symbol 'arch_paths_first'
+CMakeFiles/cmTC_29ac8.dir/CheckFunctionExists.c.o:CheckFunctionExists.c:function main: error: undefined reference to 'sysctlbyname'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_29ac8.dir/build.make:87: cmTC_29ac8] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_29ac8/fast] Fout 2
+
+
+Determining if the function KQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_f30aa/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_f30aa.dir/build.make CMakeFiles/cmTC_f30aa.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_f30aa.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_f30aa.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f30aa
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f30aa.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_f30aa.dir/CheckFunctionExists.c.o  -o cmTC_f30aa 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_f30aa.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `KQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_f30aa.dir/build.make:87: cmTC_f30aa] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_f30aa/fast] Fout 2
+
+
+Determining if the function PTHREAD_WORKQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_720e2/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_720e2.dir/build.make CMakeFiles/cmTC_720e2.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_720e2.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_720e2.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_720e2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_720e2.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_720e2.dir/CheckFunctionExists.c.o  -o cmTC_720e2 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_720e2.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `PTHREAD_WORKQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_720e2.dir/build.make:87: cmTC_720e2] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_720e2/fast] Fout 2
+
+
+Determining if the function BLOCKS_RUNTIME_RUNTIME_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_e661c/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_e661c.dir/build.make CMakeFiles/cmTC_e661c.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_e661c.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_e661c.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e661c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e661c.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_e661c.dir/CheckFunctionExists.c.o  -o cmTC_e661c 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_e661c.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_e661c.dir/build.make:87: cmTC_e661c] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_e661c/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_11e1a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_11e1a.dir/build.make CMakeFiles/cmTC_11e1a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_11e1a.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_11e1a.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_11e1a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11e1a.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_11e1a.dir/CheckFunctionExists.c.o  -o cmTC_11e1a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_11e1a.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_11e1a.dir/build.make:87: cmTC_11e1a] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_11e1a/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists in the /Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib/libpthread_workqueue.a failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_e00ac/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_e00ac.dir/build.make CMakeFiles/cmTC_e00ac.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_e00ac.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_e00ac.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e00ac
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e00ac.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_e00ac.dir/CheckFunctionExists.c.o  -o cmTC_e00ac /Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib/libpthread_workqueue.a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_e00ac.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_e00ac.dir/build.make:88: cmTC_e00ac] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_e00ac/fast] Fout 2
+
+
+Determining if the CLOCK_UPTIME exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_4f240/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_4f240.dir/build.make CMakeFiles/cmTC_4f240.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_4f240.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_4f240.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
+  return ((int*)(&CLOCK_UPTIME))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4f240.dir/build.make:66: CMakeFiles/cmTC_4f240.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_4f240/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_UPTIME
+  return ((int*)(&CLOCK_UPTIME))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_NONE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_10ea8/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_10ea8.dir/build.make CMakeFiles/cmTC_10ea8.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_10ea8.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_10ea8.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_10ea8.dir/build.make:66: CMakeFiles/cmTC_10ea8.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_10ea8/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_NONE
+  return ((int*)(&NOTE_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REAP exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_8bfe7/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_8bfe7.dir/build.make CMakeFiles/cmTC_8bfe7.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_8bfe7.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_8bfe7.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8bfe7.dir/build.make:66: CMakeFiles/cmTC_8bfe7.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_8bfe7/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REAP
+  return ((int*)(&NOTE_REAP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_SIGNAL exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_097b2/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_097b2.dir/build.make CMakeFiles/cmTC_097b2.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_097b2.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_097b2.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_097b2.dir/build.make:66: CMakeFiles/cmTC_097b2.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_097b2/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_SIGNAL
+  return ((int*)(&NOTE_SIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REVOKE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_76a8c/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_76a8c.dir/build.make CMakeFiles/cmTC_76a8c.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_76a8c.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_76a8c.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_76a8c.dir/build.make:66: CMakeFiles/cmTC_76a8c.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_76a8c/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REVOKE
+  return ((int*)(&NOTE_REVOKE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a4e91/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a4e91.dir/build.make CMakeFiles/cmTC_a4e91.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a4e91.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_a4e91.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a4e91.dir/build.make:66: CMakeFiles/cmTC_a4e91.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a4e91/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH_SAFE
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FD_COPY exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_349cd/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_349cd.dir/build.make CMakeFiles/cmTC_349cd.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_349cd.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_349cd.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
+  return ((int*)(&FD_COPY))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_349cd.dir/build.make:66: CMakeFiles/cmTC_349cd.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_349cd/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/select.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FD_COPY
+  return ((int*)(&FD_COPY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SIGEMT exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_b5ce0/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_b5ce0.dir/build.make CMakeFiles/cmTC_b5ce0.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_b5ce0.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_b5ce0.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
+  return ((int*)(&SIGEMT))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b5ce0.dir/build.make:66: CMakeFiles/cmTC_b5ce0.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_b5ce0/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGEMT
+  return ((int*)(&SIGEMT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_UPDATE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a9800/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a9800.dir/build.make CMakeFiles/cmTC_a9800.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a9800.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_a9800.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
+  return ((int*)(&VQ_UPDATE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a9800.dir/build.make:66: CMakeFiles/cmTC_a9800.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a9800/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_UPDATE
+  return ((int*)(&VQ_UPDATE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_VERYLOWDISK exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a715a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a715a.dir/build.make CMakeFiles/cmTC_a715a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a715a.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_a715a.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a715a.dir/build.make:66: CMakeFiles/cmTC_a715a.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a715a/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_VERYLOWDISK
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_6767d/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_6767d.dir/build.make CMakeFiles/cmTC_6767d.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_6767d.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_6767d.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6767d.dir/build.make:66: CMakeFiles/cmTC_6767d.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_6767d/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_SETEXEC
+  return ((int*)(&POSIX_SPAWN_SETEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_c4677/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_c4677.dir/build.make CMakeFiles/cmTC_c4677.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_c4677.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_c4677.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c4677.dir/build.make:66: CMakeFiles/cmTC_c4677.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_c4677/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_START_SUSPENDED
+  return ((int*)(&POSIX_SPAWN_START_SUSPENDED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the program_invocation_short_name exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_750db/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_750db.dir/build.make CMakeFiles/cmTC_750db.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_750db.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE  -O2 -std=gnu11 -fPIC -std=gnu99    -o CMakeFiles/cmTC_750db.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'program_invocation_short_name'
+  return ((int*)(&program_invocation_short_name))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_750db.dir/build.make:66: CMakeFiles/cmTC_750db.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_750db/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef program_invocation_short_name
+  return ((int*)(&program_invocation_short_name))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_key_init_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_9435f/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_9435f.dir/build.make CMakeFiles/cmTC_9435f.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_9435f.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_9435f.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9435f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9435f.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_9435f.dir/CheckFunctionExists.c.o  -o cmTC_9435f 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_9435f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_key_init_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_9435f.dir/build.make:87: cmTC_9435f] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_9435f/fast] Fout 2
+
+
+Determining if the function pthread_main_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_7994e/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_7994e.dir/build.make CMakeFiles/cmTC_7994e.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_7994e.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_7994e.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7994e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7994e.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_7994e.dir/CheckFunctionExists.c.o  -o cmTC_7994e 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_7994e.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_main_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_7994e.dir/build.make:87: cmTC_7994e] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_7994e/fast] Fout 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_f3e04/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_f3e04.dir/build.make CMakeFiles/cmTC_f3e04.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_f3e04.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_f3e04.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f3e04
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3e04.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC  CMakeFiles/cmTC_f3e04.dir/CheckFunctionExists.c.o  -o cmTC_f3e04 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_f3e04.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sysctlbyname'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_f3e04.dir/build.make:87: cmTC_f3e04] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_f3e04/fast] Fout 2
+
+
+Determining if the function KQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_9d7c6/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_9d7c6.dir/build.make CMakeFiles/cmTC_9d7c6.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_9d7c6.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC   -o CMakeFiles/cmTC_9d7c6.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9d7c6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d7c6.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=KQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_9d7c6.dir/CheckFunctionExists.c.o  -o cmTC_9d7c6 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_9d7c6.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `KQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_9d7c6.dir/build.make:87: cmTC_9d7c6] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_9d7c6/fast] Fout 2
+
+
+Determining if the function PTHREAD_WORKQUEUE_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_11d4a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_11d4a.dir/build.make CMakeFiles/cmTC_11d4a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_11d4a.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC   -o CMakeFiles/cmTC_11d4a.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_11d4a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11d4a.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=PTHREAD_WORKQUEUE_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_11d4a.dir/CheckFunctionExists.c.o  -o cmTC_11d4a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_11d4a.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `PTHREAD_WORKQUEUE_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_11d4a.dir/build.make:87: cmTC_11d4a] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_11d4a/fast] Fout 2
+
+
+Determining if the function BLOCKS_RUNTIME_RUNTIME_IN_LIBC exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_ed04a/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_ed04a.dir/build.make CMakeFiles/cmTC_ed04a.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_ed04a.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC   -o CMakeFiles/cmTC_ed04a.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ed04a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed04a.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=BLOCKS_RUNTIME_RUNTIME_IN_LIBC -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_ed04a.dir/CheckFunctionExists.c.o  -o cmTC_ed04a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_ed04a.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `BLOCKS_RUNTIME_RUNTIME_IN_LIBC'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ed04a.dir/build.make:87: cmTC_ed04a] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_ed04a/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a710d/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a710d.dir/build.make CMakeFiles/cmTC_a710d.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a710d.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_a710d.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a710d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a710d.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_a710d.dir/CheckFunctionExists.c.o  -o cmTC_a710d 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_a710d.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_a710d.dir/build.make:87: cmTC_a710d] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a710d/fast] Fout 2
+
+
+Determining if the function pthread_workqueue_setdispatch_np exists in the /Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib/libpthread_workqueue.a failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_dc96b/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_dc96b.dir/build.make CMakeFiles/cmTC_dc96b.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_dc96b.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np   -o CMakeFiles/cmTC_dc96b.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dc96b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc96b.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_workqueue_setdispatch_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_dc96b.dir/CheckFunctionExists.c.o  -o cmTC_dc96b /Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib/libpthread_workqueue.a 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 0000000000000600
+CMakeFiles/cmTC_dc96b.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_workqueue_setdispatch_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_dc96b.dir/build.make:88: cmTC_dc96b] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_dc96b/fast] Fout 2
+
+
+Determining if the CLOCK_UPTIME exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_47869/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_47869.dir/build.make CMakeFiles/cmTC_47869.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_47869.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_47869.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'CLOCK_UPTIME'
+  return ((int*)(&CLOCK_UPTIME))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_47869.dir/build.make:66: CMakeFiles/cmTC_47869.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_47869/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_UPTIME
+  return ((int*)(&CLOCK_UPTIME))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_NONE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_a47e3/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_a47e3.dir/build.make CMakeFiles/cmTC_a47e3.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_a47e3.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_a47e3.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a47e3.dir/build.make:66: CMakeFiles/cmTC_a47e3.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_a47e3/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_NONE
+  return ((int*)(&NOTE_NONE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REAP exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_39803/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_39803.dir/build.make CMakeFiles/cmTC_39803.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_39803.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_39803.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_39803.dir/build.make:66: CMakeFiles/cmTC_39803.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_39803/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REAP
+  return ((int*)(&NOTE_REAP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_SIGNAL exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_ae99f/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_ae99f.dir/build.make CMakeFiles/cmTC_ae99f.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_ae99f.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_ae99f.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_ae99f.dir/build.make:66: CMakeFiles/cmTC_ae99f.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_ae99f/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_SIGNAL
+  return ((int*)(&NOTE_SIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the NOTE_REVOKE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_edc43/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_edc43.dir/build.make CMakeFiles/cmTC_edc43.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_edc43.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_edc43.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/event.h' file not found
+#include <sys/event.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_edc43.dir/build.make:66: CMakeFiles/cmTC_edc43.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_edc43/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/event.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef NOTE_REVOKE
+  return ((int*)(&NOTE_REVOKE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the TAILQ_FOREACH_SAFE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_615ff/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_615ff.dir/build.make CMakeFiles/cmTC_615ff.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_615ff.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_615ff.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'TAILQ_FOREACH_SAFE'
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_615ff.dir/build.make:66: CMakeFiles/cmTC_615ff.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_615ff/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/queue.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef TAILQ_FOREACH_SAFE
+  return ((int*)(&TAILQ_FOREACH_SAFE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FD_COPY exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_65336/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_65336.dir/build.make CMakeFiles/cmTC_65336.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_65336.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_65336.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'FD_COPY'
+  return ((int*)(&FD_COPY))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_65336.dir/build.make:66: CMakeFiles/cmTC_65336.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_65336/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/select.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FD_COPY
+  return ((int*)(&FD_COPY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SIGEMT exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_34fdb/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_34fdb.dir/build.make CMakeFiles/cmTC_34fdb.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_34fdb.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_34fdb.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'SIGEMT'
+  return ((int*)(&SIGEMT))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_34fdb.dir/build.make:66: CMakeFiles/cmTC_34fdb.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_34fdb/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIGEMT
+  return ((int*)(&SIGEMT))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_UPDATE exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_b9f7e/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_b9f7e.dir/build.make CMakeFiles/cmTC_b9f7e.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_b9f7e.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_b9f7e.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_UPDATE'
+  return ((int*)(&VQ_UPDATE))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b9f7e.dir/build.make:66: CMakeFiles/cmTC_b9f7e.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_b9f7e/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_UPDATE
+  return ((int*)(&VQ_UPDATE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the VQ_VERYLOWDISK exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_6e5fd/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_6e5fd.dir/build.make CMakeFiles/cmTC_6e5fd.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_6e5fd.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_6e5fd.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'VQ_VERYLOWDISK'
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6e5fd.dir/build.make:66: CMakeFiles/cmTC_6e5fd.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_6e5fd/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/mount.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef VQ_VERYLOWDISK
+  return ((int*)(&VQ_VERYLOWDISK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_SETEXEC exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_2109b/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_2109b.dir/build.make CMakeFiles/cmTC_2109b.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_2109b.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_2109b.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_2109b.dir/build.make:66: CMakeFiles/cmTC_2109b.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_2109b/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_SETEXEC
+  return ((int*)(&POSIX_SPAWN_SETEXEC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the POSIX_SPAWN_START_SUSPENDED exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_d9393/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_d9393.dir/build.make CMakeFiles/cmTC_d9393.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_d9393.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_d9393.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'sys/spawn.h' file not found
+#include <sys/spawn.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d9393.dir/build.make:66: CMakeFiles/cmTC_d9393.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_d9393/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/spawn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef POSIX_SPAWN_START_SUSPENDED
+  return ((int*)(&POSIX_SPAWN_START_SUSPENDED))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the program_invocation_short_name exist failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_3f97f/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_3f97f.dir/build.make CMakeFiles/cmTC_3f97f.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_3f97f.dir/CheckSymbolExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99    -o CMakeFiles/cmTC_3f97f.dir/CheckSymbolExists.c.o   -c /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'program_invocation_short_name'
+  return ((int*)(&program_invocation_short_name))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3f97f.dir/build.make:66: CMakeFiles/cmTC_3f97f.dir/CheckSymbolExists.c.o] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_3f97f/fast] Fout 2
+
+File /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef program_invocation_short_name
+  return ((int*)(&program_invocation_short_name))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_key_init_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_9d2b7/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_9d2b7.dir/build.make CMakeFiles/cmTC_9d2b7.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_9d2b7.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np   -o CMakeFiles/cmTC_9d2b7.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9d2b7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d2b7.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_key_init_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_9d2b7.dir/CheckFunctionExists.c.o  -o cmTC_9d2b7 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_9d2b7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_key_init_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_9d2b7.dir/build.make:87: cmTC_9d2b7] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_9d2b7/fast] Fout 2
+
+
+Determining if the function pthread_main_np exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_e7c62/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_e7c62.dir/build.make CMakeFiles/cmTC_e7c62.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_e7c62.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np   -o CMakeFiles/cmTC_e7c62.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e7c62
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7c62.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=pthread_main_np -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_e7c62.dir/CheckFunctionExists.c.o  -o cmTC_e7c62 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_e7c62.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `pthread_main_np'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_e7c62.dir/build.make:87: cmTC_e7c62] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_e7c62/fast] Fout 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/local/bin/make cmTC_06f92/fast 
+/usr/local/bin/make -f CMakeFiles/cmTC_06f92.dir/build.make CMakeFiles/cmTC_06f92.dir/build
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt binnengegaan
+Building C object CMakeFiles/cmTC_06f92.dir/CheckFunctionExists.c.o
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang   -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_06f92.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_06f92
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06f92.dir/link.txt --verbose=1
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -DCHECK_FUNCTION_EXISTS=sysctlbyname -Wl,-search_paths_first -Wl,-headerpad_max_install_names -O2 -fPIC -L/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/lib  CMakeFiles/cmTC_06f92.dir/CheckFunctionExists.c.o  -o cmTC_06f92 
+/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld: warning: cannot find entry symbol arch_paths_first; defaulting to 00000000000005f0
+CMakeFiles/cmTC_06f92.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sysctlbyname'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_06f92.dir/build.make:87: cmTC_06f92] Fout 1
+make[1]: Map '/Users/andyvand/Downloads/libdispatch/CMakeFiles/CMakeTmp' wordt verlaten
+make: *** [Makefile:121: cmTC_06f92/fast] Fout 2
 
 

@@ -1,122 +1,122 @@
 [
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/apply.c.o   -c /home/andyvand/Downloads/libdispatch/src/apply.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/apply.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/apply.c.o   -c /Users/andyvand/Downloads/libdispatch/src/apply.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/apply.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/benchmark.c.o   -c /home/andyvand/Downloads/libdispatch/src/benchmark.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/benchmark.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/benchmark.c.o   -c /Users/andyvand/Downloads/libdispatch/src/benchmark.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/benchmark.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/init.c.o   -c /home/andyvand/Downloads/libdispatch/src/init.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/init.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/init.c.o   -c /Users/andyvand/Downloads/libdispatch/src/init.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/init.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/object.c.o   -c /home/andyvand/Downloads/libdispatch/src/object.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/object.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/object.c.o   -c /Users/andyvand/Downloads/libdispatch/src/object.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/object.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/once.c.o   -c /home/andyvand/Downloads/libdispatch/src/once.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/once.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/once.c.o   -c /Users/andyvand/Downloads/libdispatch/src/once.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/once.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/queue.c.o   -c /home/andyvand/Downloads/libdispatch/src/queue.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/queue.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/queue.c.o   -c /Users/andyvand/Downloads/libdispatch/src/queue.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/queue.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/semaphore.c.o   -c /home/andyvand/Downloads/libdispatch/src/semaphore.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/semaphore.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/semaphore.c.o   -c /Users/andyvand/Downloads/libdispatch/src/semaphore.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/semaphore.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/source.c.o   -c /home/andyvand/Downloads/libdispatch/src/source.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/source.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/source.c.o   -c /Users/andyvand/Downloads/libdispatch/src/source.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/source.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/time.c.o   -c /home/andyvand/Downloads/libdispatch/src/time.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/time.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/time.c.o   -c /Users/andyvand/Downloads/libdispatch/src/time.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/time.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/data.c.o   -c /home/andyvand/Downloads/libdispatch/src/data.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/data.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/data.c.o   -c /Users/andyvand/Downloads/libdispatch/src/data.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/data.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/io.c.o   -c /home/andyvand/Downloads/libdispatch/src/io.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/io.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/io.c.o   -c /Users/andyvand/Downloads/libdispatch/src/io.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/io.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/transform.c.o   -c /home/andyvand/Downloads/libdispatch/src/transform.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/transform.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -Dlibdispatch_shared_EXPORTS -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG -fPIC   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_shared.dir/transform.c.o   -c /Users/andyvand/Downloads/libdispatch/src/transform.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/transform.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/apply.c.o   -c /home/andyvand/Downloads/libdispatch/src/apply.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/apply.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/apply.c.o   -c /Users/andyvand/Downloads/libdispatch/src/apply.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/apply.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/benchmark.c.o   -c /home/andyvand/Downloads/libdispatch/src/benchmark.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/benchmark.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/benchmark.c.o   -c /Users/andyvand/Downloads/libdispatch/src/benchmark.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/benchmark.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/init.c.o   -c /home/andyvand/Downloads/libdispatch/src/init.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/init.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/init.c.o   -c /Users/andyvand/Downloads/libdispatch/src/init.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/init.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/object.c.o   -c /home/andyvand/Downloads/libdispatch/src/object.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/object.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/object.c.o   -c /Users/andyvand/Downloads/libdispatch/src/object.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/object.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/once.c.o   -c /home/andyvand/Downloads/libdispatch/src/once.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/once.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/once.c.o   -c /Users/andyvand/Downloads/libdispatch/src/once.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/once.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/queue.c.o   -c /home/andyvand/Downloads/libdispatch/src/queue.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/queue.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/queue.c.o   -c /Users/andyvand/Downloads/libdispatch/src/queue.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/queue.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/semaphore.c.o   -c /home/andyvand/Downloads/libdispatch/src/semaphore.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/semaphore.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/semaphore.c.o   -c /Users/andyvand/Downloads/libdispatch/src/semaphore.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/semaphore.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/source.c.o   -c /home/andyvand/Downloads/libdispatch/src/source.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/source.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/source.c.o   -c /Users/andyvand/Downloads/libdispatch/src/source.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/source.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/time.c.o   -c /home/andyvand/Downloads/libdispatch/src/time.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/time.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/time.c.o   -c /Users/andyvand/Downloads/libdispatch/src/time.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/time.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/data.c.o   -c /home/andyvand/Downloads/libdispatch/src/data.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/data.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/data.c.o   -c /Users/andyvand/Downloads/libdispatch/src/data.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/data.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/io.c.o   -c /home/andyvand/Downloads/libdispatch/src/io.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/io.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/io.c.o   -c /Users/andyvand/Downloads/libdispatch/src/io.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/io.c"
 },
 {
-  "directory": "/home/andyvand/Downloads/libdispatch/src",
-  "command": "/usr/bin/clang -D_GNU_SOURCE -I/home/andyvand/Downloads/libdispatch -I/home/andyvand/Downloads/libdispatch/os -I/home/andyvand/Downloads/libdispatch/private -I/usr/include/kqueue -isystem /home/andyvand/Downloads/libdispatch/fixincludes   -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/transform.c.o   -c /home/andyvand/Downloads/libdispatch/src/transform.c",
-  "file": "/home/andyvand/Downloads/libdispatch/src/transform.c"
+  "directory": "/Users/andyvand/Downloads/libdispatch/src",
+  "command": "/Users/andyvand/Downloads/android-ndk-r21b/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android23-clang -D_GNU_SOURCE -I/Users/andyvand/Downloads/libdispatch -I/Users/andyvand/Downloads/libdispatch/os -I/Users/andyvand/Downloads/libdispatch/private -isystem /Users/andyvand/Downloads/libdispatch/fixincludes  -O2 -std=gnu11 -fPIC -I/Users/andyvand/Downloads/android-ndk-r21b/aarch64_prefix/include -std=gnu99 -O3 -DNDEBUG   -Wall -Wextra -Wno-unused-parameter -fvisibility=hidden -fblocks -momit-leaf-frame-pointer -o CMakeFiles/libdispatch_static.dir/transform.c.o   -c /Users/andyvand/Downloads/libdispatch/src/transform.c",
+  "file": "/Users/andyvand/Downloads/libdispatch/src/transform.c"
 }
 ]

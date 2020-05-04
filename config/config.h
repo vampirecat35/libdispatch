@@ -46,7 +46,7 @@
 
 /* Define to 1 if you have the declaration of `program_invocation_short_name',
    and to 0 if you don't. */
-#define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 1
+#define HAVE_DECL_PROGRAM_INVOCATION_SHORT_NAME 0
 
 /* Define to 1 if you have the declaration of `SIGEMT', and to 0 if you don't.
    */
@@ -65,7 +65,7 @@
 #define HAVE_DECL_VQ_VERYLOWDISK 0
 
 /* Define to 1 if you have the `getprogname' function. */
-#define HAVE_GETPROGNAME 0
+#define HAVE_GETPROGNAME 1
 
 /* Define if Apple leaks program is present */
 #define HAVE_LEAKS 0
@@ -116,7 +116,7 @@
 #define HAVE_PTHREAD_WORKQUEUE_SETDISPATCH_NP 0
 
 /* Define to 1 if you have the `strlcpy' function. */
-#define HAVE_STRLCPY 0
+#define HAVE_STRLCPY 1
 
 /* Define to 1 if you have the `sysconf' function. */
 #define HAVE_SYSCONF 1
